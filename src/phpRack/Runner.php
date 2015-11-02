@@ -32,17 +32,14 @@
 /**
  * @see phpRack_Test
  */
-require_once PHPRACK_PATH . '/Test.php';
 
 /**
  * @see phpRack_Suite
  */
-require_once PHPRACK_PATH . '/Suite.php';
 
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * Run all tests together, or one by one
@@ -123,7 +120,6 @@ class phpRack_Runner
         /**
          * @see phpRack_Runner_Auth
          */
-        require_once PHPRACK_PATH . '/Runner/Auth.php';
         $this->_auth = new phpRack_Runner_Auth($this, $this->_options);
     }
 
@@ -303,7 +299,6 @@ class phpRack_Runner
             /**
              * @see phpRack_Suite
              */
-            require_once PHPRACK_PATH . '/Suite/Test.php';
             $test = phpRack_Suite_Test::factory($label, $this);
             if (isset($options['config'])) {
                 $test->setConfig($options['config']);
@@ -319,7 +314,6 @@ class phpRack_Runner
         /**
          * @see phpRack_Runner_Logger
          */
-        require_once PHPRACK_PATH . '/Runner/Logger.php';
         return json_encode(
             array(
                 'success' => $result->wasSuccessful(),
@@ -360,7 +354,6 @@ class phpRack_Runner
             /**
              * @see phpRack_Adapters_Notifier_Mail
              */
-            require_once PHPRACK_PATH . '/Adapters/Notifier/Mail.php';
 
             if (array_key_exists('transport', $this->_options['notify']['email'])) {
                 $transport = $this->_options['notify']['email']['transport'];

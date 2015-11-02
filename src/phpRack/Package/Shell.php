@@ -32,7 +32,6 @@
 /**
  * @see phpRack_Package
  */
-require_once PHPRACK_PATH . '/Package.php';
 
 /**
  * Assertions related to SHELL.
@@ -66,7 +65,6 @@ class phpRack_Package_Shell extends phpRack_Package
         /**
          * @see phpRack_Adapters_Shell_Command
          */
-        require_once PHPRACK_PATH . '/Adapters/Shell/Command.php';
         $result = phpRack_Adapters_Shell_Command::factory($cmd)->run();
 
         $this->_log('$ ' . $cmd);

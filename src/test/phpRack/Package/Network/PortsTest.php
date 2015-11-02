@@ -6,12 +6,10 @@
 /**
  * @see AbstractTest
  */
-require_once 'src/test/AbstractTest.php';
 
 /**
  * @see phpRack_Package_Network_Ports
  */
-require_once PHPRACK_PATH . '/Package/Network/Ports.php';
 
 class phpRack_Package_Network_PortsTest extends AbstractTest
 {

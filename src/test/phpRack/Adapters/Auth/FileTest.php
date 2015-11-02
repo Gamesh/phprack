@@ -6,12 +6,10 @@
 /**
  * @see AbstractTest
  */
-require_once 'src/test/AbstractTest.php';
 
 /**
  * @see phpRack_Adapters_Auth_File
  */
-require_once PHPRACK_PATH . '/Adapters/Auth/File.php';
 
 class Adapters_Auth_FileTest extends AbstractTest
 {

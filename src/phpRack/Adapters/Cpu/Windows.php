@@ -31,12 +31,10 @@
 /**
  * @see phpRack_Adapters_Cpu_Abstract
  */
-require_once PHPRACK_PATH . '/Adapters/Cpu/Abstract.php';
 
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * Windows CPU Adapter

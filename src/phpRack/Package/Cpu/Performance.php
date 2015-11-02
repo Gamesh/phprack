@@ -32,12 +32,10 @@
 /**
  * @see phpRack_Package
  */
-require_once PHPRACK_PATH . '/Package.php';
 
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * CPU Performance check.
@@ -59,7 +57,6 @@ class phpRack_Package_Cpu_Performance extends phpRack_Package
         /**
          * @see phpRack_Adapters_Cpu
          */
-        require_once PHPRACK_PATH . '/Adapters/Cpu.php';
 
         try {
             $cpu = phpRack_Adapters_Cpu::factory();

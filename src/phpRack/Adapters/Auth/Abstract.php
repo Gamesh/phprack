@@ -103,7 +103,6 @@ abstract class phpRack_Adapters_Auth_Abstract
         /**
          * @see phpRack_Runner_Auth_Result
          */
-        require_once PHPRACK_PATH . '/Runner/Auth/Result.php';
         return new phpRack_Runner_Auth_Result($result, $message);
     }
 

@@ -6,12 +6,10 @@
 /**
  * @see AbstractTest
  */
-require_once 'src/test/AbstractTest.php';
 
 /**
  * @see phpRack_Adapters_Config
  */
-require_once PHPRACK_PATH . '/Adapters/Config.php';
 
 class Adapters_ConfigTest extends AbstractTest
 {

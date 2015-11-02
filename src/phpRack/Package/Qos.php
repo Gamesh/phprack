@@ -32,12 +32,10 @@
 /**
  * @see phpRack_Package
  */
-require_once PHPRACK_PATH . '/Package.php';
 
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * QOS related assertions.
@@ -80,7 +78,6 @@ class phpRack_Package_Qos extends phpRack_Package
         /**
          * @see phpRack_Adapters_Url
          */
-        require_once PHPRACK_PATH . '/Adapters/Url.php';
         $totalRequestsTime = 0;
         $requestsCompleted = 0;
         reset($options['scenario']);

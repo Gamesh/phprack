@@ -31,12 +31,10 @@
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * @see phpRack_Adapters_Notifier_Mail_Abstract
  */
-require_once PHPRACK_PATH . '/Adapters/Notifier/Mail/Abstract.php';
 
 /**
  * Smtp implementation of phpRack mail

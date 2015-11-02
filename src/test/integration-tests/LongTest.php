@@ -6,7 +6,6 @@
 /**
  * @see phpRack_Test
  */
-require_once PHPRACK_PATH . '/Test.php';
 
 class LongTest extends phpRack_Test
 {
@@ -16,7 +15,6 @@ class LongTest extends phpRack_Test
          /**
          * @see phpRack_Adapters_ConnectionManager
          */
-        require_once PHPRACK_PATH . '/Adapters/ConnectionMonitor.php';
 
         for ($i = 0; $i < 20; $i++) {
             sleep(1);

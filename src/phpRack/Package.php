@@ -32,17 +32,14 @@
 /**
  * @see phpRack_Result
  */
-require_once PHPRACK_PATH . '/Result.php';
 
 /**
  * @see phpRack_Test
  */
-require_once PHPRACK_PATH . '/Test.php';
 
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * One test assertion package

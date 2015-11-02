@@ -6,7 +6,6 @@
 /**
  * @see phpRack_Test
  */
-require_once PHPRACK_PATH . '/Test.php';
 
 class ShellTest extends phpRack_Test
 {

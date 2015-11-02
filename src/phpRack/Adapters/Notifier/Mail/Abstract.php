@@ -31,7 +31,6 @@
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * Abstract class for the phpRack_Adapters_Notifier_Mail_*

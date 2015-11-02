@@ -6,7 +6,6 @@
 /**
  * @see phpRack_Test
  */
-require_once PHPRACK_PATH . '/Test.php';
 
 class Disc_FileTest extends phpRack_Test
 {

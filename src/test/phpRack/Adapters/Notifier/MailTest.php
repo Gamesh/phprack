@@ -6,12 +6,10 @@
 /**
  * @see AbstractTest
  */
-require_once 'src/test/AbstractTest.php';
 
 /**
  * @see phpRack_Adapters_Notifier_Mail
  */
-require_once PHPRACK_PATH . '/Adapters/Notifier/Mail.php';
 
 class Adapters_Notifier_MailTest extends AbstractTest
 {

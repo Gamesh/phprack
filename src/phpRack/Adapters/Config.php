@@ -31,7 +31,6 @@
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * Config adapter used for store tests configuration and provide object

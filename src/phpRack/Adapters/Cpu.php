@@ -31,7 +31,6 @@
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * CPU adapter used to get details about available processor
@@ -56,7 +55,6 @@ class phpRack_Adapters_Cpu
         /**
          * @see phpRack_Adapters_Os
          */
-        require_once PHPRACK_PATH . '/Adapters/Os.php';
         $os = phpRack_Adapters_Os::get();
         $classFile = PHPRACK_PATH . '/Adapters/Cpu/' . ucfirst($os) . '.php';
 

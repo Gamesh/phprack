@@ -1,20 +1,15 @@
 <?php
+
 /**
  * @version $Id$
- */
-
-/**
- * @see AbstractTest
- */
-require_once 'src/test/AbstractTest.php';
-
-/**
+ *
+ * @see AbstractTest 
  * @see phpRack_Adapters_Cpu
+ * @requires extension com_dotnet
  */
-require_once PHPRACK_PATH . '/Adapters/Cpu.php';
-
 class Adapters_CpuTest extends AbstractTest
 {
+
     /**
      * CPU adapter
      *
@@ -33,7 +28,7 @@ class Adapters_CpuTest extends AbstractTest
         unset($this->_adapter);
         parent::tearDown();
     }
-
+    
     public function testGetBogoMips()
     {
         try {
@@ -42,7 +37,7 @@ class Adapters_CpuTest extends AbstractTest
             $this->_log($e);
             $this->markTestSkipped($e->getMessage());
         }
-        $this->assertTrue(is_float($bogoMips));
+        $this->assertInternalType('float', $bogoMips);
     }
 
     public function testGetCpuFrequency()
@@ -53,6 +48,7 @@ class Adapters_CpuTest extends AbstractTest
             $this->_log($e);
             $this->markTestSkipped($e->getMessage());
         }
-        $this->assertTrue(is_float($frequency));
+        $this->assertInternalType('float', $frequency);
     }
+
 }

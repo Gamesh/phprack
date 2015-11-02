@@ -31,7 +31,6 @@
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * Mail adapter used for mailing phpRack reports

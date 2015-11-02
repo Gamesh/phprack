@@ -6,12 +6,10 @@
 /**
  * @see AbstractTest
  */
-require_once 'src/test/AbstractTest.php';
 
 /**
  * @see phpRack_Runner
  */
-require_once PHPRACK_PATH . '/Runner.php';
 
 class BootstrapTest extends AbstractTest
 {

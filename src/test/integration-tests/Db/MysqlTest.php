@@ -6,7 +6,6 @@
 /**
  * @see phpRack_Test
  */
-require_once PHPRACK_PATH . '/Test.php';
 
 class Db_MysqlTest extends phpRack_Test
 {

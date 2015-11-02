@@ -31,7 +31,6 @@
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * PEAR adapter used for checking PEAR packages availability
@@ -74,7 +73,6 @@ class phpRack_Adapters_Pear_Package
         /**
          * @see phpRack_Adapters_Shell_Command
          */
-        require_once PHPRACK_PATH . '/Adapters/Shell/Command.php';
         $result = phpRack_Adapters_Shell_Command::factory($command)->run();
 
         if (!$result) {

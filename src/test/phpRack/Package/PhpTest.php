@@ -1,8 +1,6 @@
 <?php
 
-require_once 'src/test/AbstractTest.php';
 
-require_once PHPRACK_PATH . '/Package/Shell.php';
 
 class phpRack_Package_PhpTest extends AbstractTest
 {

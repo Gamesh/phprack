@@ -6,12 +6,10 @@
 /**
  * @see AbstractTest
  */
-require_once 'src/test/AbstractTest.php';
 
 /**
  * @see phpRack_Package_Disc_File
  */
-require_once PHPRACK_PATH . '/Package/Disc/File.php';
 
 abstract class phpRack_Package_Disc_File_AbstractTest extends AbstractTest
 {

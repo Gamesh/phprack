@@ -32,7 +32,6 @@
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * Parent class of all test suites
@@ -132,10 +131,8 @@ abstract class phpRack_Suite
     {
         $dir = PHPRACK_PATH . '/Suite/library/' . $suiteName;
         // create suite file iterator
-        require_once PHPRACK_PATH . '/Adapters/Files/DirectoryFilterIterator.php';
         $iterator = phpRack_Adapters_Files_DirectoryFilterIterator::factory($dir)
             ->setExtensions('php');
-        require_once PHPRACK_PATH . '/Suite/Test.php';
         foreach ($iterator as $file) {
             $label = substr($file->getRealPath(), strlen($dir));
             // phpRack_Exception is possible here
@@ -161,7 +158,6 @@ abstract class phpRack_Suite
      */
     protected function _addTest($testName, array $config = array())
     {
-        require_once PHPRACK_PATH . '/Suite/Test.php';
         // Exception is possible here
         $test = phpRack_Suite_Test::factory($testName . 'Test.php', $this->_runner);
         $test->setConfig($config);

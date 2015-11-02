@@ -32,12 +32,10 @@
 /**
  * @see phpRack_Package
  */
-require_once PHPRACK_PATH . '/Package.php';
 
 /**
  * @see phpRack_Adapters_File
  */
-require_once PHPRACK_PATH . '/Adapters/File.php';
 
 /**
  * File informations and content.

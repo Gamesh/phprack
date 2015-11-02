@@ -31,12 +31,10 @@
 /**
  * @see phpRack_Adapters_Cpu_Abstract
  */
-require_once PHPRACK_PATH . '/Adapters/Cpu/Abstract.php';
 
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * Darwin CPU Adapter (Mac OS)
@@ -72,7 +70,6 @@ class phpRack_Adapters_Cpu_Darwin extends phpRack_Adapters_Cpu_Abstract
         /**
          * @see phpRack_Adapters_Shell_Command
          */
-        require_once PHPRACK_PATH . '/Adapters/Shell/Command.php';
         $data = phpRack_Adapters_Shell_Command::factory(
             'system_profiler SPHardwareDataType -xml 2>&1'
         )->run();

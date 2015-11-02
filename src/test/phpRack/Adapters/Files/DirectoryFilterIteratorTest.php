@@ -6,12 +6,10 @@
 /**
  * @see AbstractTest
  */
-require_once 'src/test/AbstractTest.php';
 
 /**
  * @see phpRack_Adapters_Files_DirectoryFilterIterator
  */
-require_once PHPRACK_PATH . '/Adapters/Files/DirectoryFilterIterator.php';
 
 class phpRack_Adapters_Files_DirectoryFilterIteratorTest extends AbstractTest
 {

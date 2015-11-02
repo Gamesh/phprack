@@ -6,22 +6,18 @@
 /**
  * @see AbstractTest
  */
-require_once 'src/test/AbstractTest.php';
 
 /**
  * @see phpRack_Runner
  */
-require_once PHPRACK_PATH . '/Runner.php';
 
 /**
  * @see phpRack_Runner_Auth_Result
  */
-require_once PHPRACK_PATH . '/Runner/Auth/Result.php';
 
 /**
  * @see phpRack_Result
  */
-require_once PHPRACK_PATH . '/Result.php';
 
 class RunnerTest extends AbstractTest
 {

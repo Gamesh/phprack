@@ -32,7 +32,6 @@
 /**
  * @see phpRack_Package
  */
-require_once PHPRACK_PATH . '/Package.php';
 
 /**
  * Local HDD related assertions
@@ -54,7 +53,6 @@ class phpRack_Package_Disc extends phpRack_Package
      */
     public function showDirectory($dir, array $options = array())
     {
-        require_once PHPRACK_PATH . '/Adapters/File.php';
         $dir = phpRack_Adapters_File::factory($dir)->getFileName();
 
         if (!file_exists($dir)) {
@@ -65,7 +63,6 @@ class phpRack_Package_Disc extends phpRack_Package
         $this->_log("Directory tree '" . realpath($dir) . "':");
 
         // Create our file iterator
-        require_once PHPRACK_PATH . '/Adapters/Files/DirectoryFilterIterator.php';
         $iterator = phpRack_Adapters_Files_DirectoryFilterIterator::factory($dir);
         if (array_key_exists('exclude', $options)) {
             $iterator->setExclude($options['exclude']);

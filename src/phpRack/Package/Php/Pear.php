@@ -32,17 +32,14 @@
 /**
  * @see phpRack_Package
  */
-require_once PHPRACK_PATH . '/Package.php';
 
 /**
  * @see phpRack_Adapters_Pear
  */
-require_once PHPRACK_PATH . '/Adapters/Pear.php';
 
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * PEAR package used for checking PEAR packages availability.

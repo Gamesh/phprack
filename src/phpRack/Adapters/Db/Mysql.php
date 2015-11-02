@@ -31,12 +31,10 @@
 /**
  * @see phpRack_Adapters_Db_Abstract
  */
-require_once PHPRACK_PATH . '/Adapters/Db/Abstract.php';
 
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * MySQL adapter
@@ -156,7 +154,6 @@ class phpRack_Adapters_Db_Mysql extends phpRack_Adapters_Db_Abstract
             /**
              * @see phpRack_Adapters_Db_Mysql_Result_Formatter
              */
-            require_once PHPRACK_PATH . '/Adapters/Db/Mysql/Result/Formatter.php';
             $response = phpRack_Adapters_Db_Mysql_Result_Formatter::formatResult($result);
         } else {
             $response = '';
@@ -308,7 +305,6 @@ class phpRack_Adapters_Db_Mysql extends phpRack_Adapters_Db_Abstract
         /**
          * @see phpRack_Adapters_Db_Mysql_Result_Formatter
          */
-        require_once PHPRACK_PATH . '/Adapters/Db/Mysql/Result/Formatter.php';
 
         if (trim(phpRack_Adapters_Db_Mysql_Result_Formatter::removeColumnHeadersLine($result)) == '') {
             return false;

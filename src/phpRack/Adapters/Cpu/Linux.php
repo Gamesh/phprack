@@ -31,12 +31,10 @@
 /**
  * @see phpRack_Adapters_Cpu_Abstract
  */
-require_once PHPRACK_PATH . '/Adapters/Cpu/Abstract.php';
 
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * Linux CPU Adapter
@@ -108,7 +106,6 @@ class phpRack_Adapters_Cpu_Linux extends phpRack_Adapters_Cpu_Abstract
         /**
          * @see phpRack_Adapters_Shell_Command
          */
-        require_once PHPRACK_PATH . '/Adapters/Shell/Command.php';
         // Exception is possible here
         $result = phpRack_Adapters_Shell_Command::factory($command)->run();
         return $result;

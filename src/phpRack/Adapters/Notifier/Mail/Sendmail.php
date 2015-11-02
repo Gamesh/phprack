@@ -31,7 +31,6 @@
 /**
  * @see phpRack_Adapters_Notifier_Mail_Abstract
  */
-require_once PHPRACK_PATH . '/Adapters/Notifier/Mail/Abstract.php';
 
 /**
  * Sendmail implementation of phpRack mail

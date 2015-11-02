@@ -5,9 +5,8 @@ if (!is_dir(INSTRUMENTED)) {
 }
 
 define(
-    'IS_AJAX_REQUEST',
-    isset($_SERVER['HTTP_X_REQUESTED_WITH'])
-    && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'
+        'IS_AJAX_REQUEST',
+        isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'
 );
 
 if (IS_AJAX_REQUEST) {
@@ -22,21 +21,21 @@ ob_start();
 <script type="text/javascript" src="QUnit/qunit.js"></script>
 
 <?php
+require_once dirname(__FILE__) . '/../../../vendor/autoload.php';
+
 $jsTestsPath = "QUnit/test/";
 /**
  * @see phpRack_Adapters_Files_DirectoryFilterIterator
  */
-require_once '../../phpRack/Adapters/Files/DirectoryFilterIterator.php';
 $iterator = phpRack_Adapters_Files_DirectoryFilterIterator::factory($jsTestsPath);
 $iterator->setExclude('/.svn/')
-    ->setExtensions('js');
+        ->setExtensions('js');
 ?>
 <?php foreach ($iterator as $file): ?>
     <script type="text/javascript"
-        src="<?php echo str_replace('\\', '/', $file->getPathname()); ?>">
+            src="<?php echo str_replace('\\', '/', $file->getPathname()); ?>">
     </script>
-<?php
-endforeach; ?>
+    <?php endforeach; ?>
 
 <h1 id="qunit-header">phpRack Test Suite</h1>
 <h2 id="qunit-banner"></h2>
@@ -48,7 +47,6 @@ endforeach; ?>
 </button>
 
 <?php
-
 $qUnitContent = ob_get_clean();
 
 ob_start();

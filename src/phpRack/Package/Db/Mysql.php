@@ -32,17 +32,14 @@
 /**
  * @see phpRack_Package
  */
-require_once PHPRACK_PATH . '/Package.php';
 
 /**
  * @see phpRack_Adapters_Db_Mysql
  */
-require_once PHPRACK_PATH . '/Adapters/Db/Mysql.php';
 
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * MySQL related assertions.

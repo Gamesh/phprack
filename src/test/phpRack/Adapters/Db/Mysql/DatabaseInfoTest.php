@@ -6,12 +6,10 @@
 /**
  * @see AbstractTest
  */
-require_once 'src/test/AbstractTest.php';
 
 /**
  * @see phpRack_Adapters_Db_Mysql_AbstractTest
  */
-require_once PHPRACK_PATH . '/../test/phpRack/Adapters/Db/Mysql/AbstractTest.php';
 
 class phpRack_Adapters_Db_Mysql_DatabaseInfoTest extends phpRack_Adapters_Db_Mysql_AbstractTest
 {

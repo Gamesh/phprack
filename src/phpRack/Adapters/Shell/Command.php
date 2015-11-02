@@ -31,12 +31,10 @@
  /**
  * @see phpRack_Adapters_ConnectionManager
  */
-require_once PHPRACK_PATH . '/Adapters/ConnectionMonitor.php';
 
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * Shell command adapter used to execute external commands and programs
@@ -270,7 +268,6 @@ class phpRack_Adapters_Shell_Command
         /**
          * @see phpRack_Adapters_Os
          */
-        require_once PHPRACK_PATH . '/Adapters/Os.php';
         $os = phpRack_Adapters_Os::get();
 
         // we must modify env only on Linux, so we should return default env in other cases

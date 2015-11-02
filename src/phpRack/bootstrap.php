@@ -103,12 +103,10 @@ try {
     /**
      * @see phpRack_Runner
      */
-    require_once PHPRACK_PATH . '/Runner.php';
     $runner = new phpRack_Runner($phpRackConfig);
     /**
      * @see phpRack_View
      */
-    require_once PHPRACK_PATH . '/View.php';
     // if it's CLI environment - just show a full test report
     if ($runner->isCliEnvironment()) {
         throw new Exception($runner->runSuite());

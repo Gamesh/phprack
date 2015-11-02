@@ -6,12 +6,10 @@
 /**
  * @see AbstractTest
  */
-require_once 'src/test/AbstractTest.php';
 
 /**
  * @see phpRack_Package_Php
  */
-require_once PHPRACK_PATH . '/Package/Php.php';
 
 class phpRack_Package_Php_LintTest extends AbstractTest
 {

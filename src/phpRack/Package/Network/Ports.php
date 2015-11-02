@@ -32,12 +32,10 @@
 /**
  * @see phpRack_Package
  */
-require_once PHPRACK_PATH . '/Package.php';
 
 /**
  * @see phpRack_Adapters_Url
  */
-require_once PHPRACK_PATH . '/Adapters/Url.php';
 
 /**
  * Ports on the server.

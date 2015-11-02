@@ -6,7 +6,6 @@
 /**
  * @see AbstractTest
  */
-require_once 'src/test/AbstractTest.php';
 
 class Runner_AuthOption_OnlySslTest extends AbstractTest
 {
@@ -23,7 +22,6 @@ class Runner_AuthOption_OnlySslTest extends AbstractTest
         /**
          * @see phpRack_Runner
          */
-        require_once PHPRACK_PATH . '/Runner.php';
         $this->_runner = new phpRack_Runner(
             array_merge($phpRackConfig, $authOptions)
         );

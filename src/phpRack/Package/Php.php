@@ -32,7 +32,6 @@
 /**
  * @see phpRack_Package
  */
-require_once PHPRACK_PATH . '/Package.php';
 
 /**
  * PHP related assertions
@@ -224,14 +223,12 @@ class phpRack_Package_Php extends phpRack_Package
      */
     public function lint($dir, array $options = array())
     {
-        require_once PHPRACK_PATH . '/Adapters/File.php';
         $dir = phpRack_Adapters_File::factory($dir)->getFileName();
         if (!file_exists($dir)) {
             $this->_failure("Directory '{$dir}' does not exist");
             return $this;
         }
         // Create our file iterator
-        require_once PHPRACK_PATH . '/Adapters/Files/DirectoryFilterIterator.php';
         $iterator = phpRack_Adapters_Files_DirectoryFilterIterator::factory($dir);
         if (!empty($options['exclude'])) {
             $iterator->setExclude($options['exclude']);
@@ -247,7 +244,6 @@ class phpRack_Package_Php extends phpRack_Package
             /**
              * @see phpRack_Adapters_Shell_Command
              */
-            require_once PHPRACK_PATH . '/Adapters/Shell/Command.php';
             $output = phpRack_Adapters_Shell_Command::factory($command)->run();
             if (preg_match('#^No syntax errors detected#', $output)) {
                 if (!empty($options['verbose'])) {

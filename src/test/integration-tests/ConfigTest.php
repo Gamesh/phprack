@@ -6,7 +6,6 @@
 /**
  * @see phpRack_Test
  */
-require_once PHPRACK_PATH . '/Test.php';
 
 class ConfigTest extends phpRack_Test
 {
@@ -16,7 +15,6 @@ class ConfigTest extends phpRack_Test
         /**
          * @see phpRack_Adapters_Config_Ini
          */
-        require_once PHPRACK_PATH . '/Adapters/Config/Ini.php';
         $ini = new phpRack_Adapters_Config_Ini(
             PHPRACK_PATH . '/../test/phpRack/Adapters/Config/_files/app.ini',
             'production'

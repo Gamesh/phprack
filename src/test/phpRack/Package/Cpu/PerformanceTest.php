@@ -1,15 +1,16 @@
 <?php
+
 /**
  * @version $Id$
  */
 
 /**
  * @see AbstractTest
+ * @requires extension com_dotnet
  */
-require_once 'src/test/AbstractTest.php';
-
 class phpRack_Package_Cpu_PerformanceTest extends AbstractTest
 {
+
     /**
      * @var phpRack_Package_Cpu_Performance
      */
@@ -30,4 +31,5 @@ class phpRack_Package_Cpu_PerformanceTest extends AbstractTest
     {
         $this->_package->atLeast(1000000000.0);
     }
+
 }

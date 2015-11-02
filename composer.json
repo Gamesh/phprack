@@ -12,8 +12,16 @@
         }
     ],
     "homepage": "http://www.phprack.com",
+    "autoload": {
+        "psr-0": {
+            "phpRack_": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": ["src/test/"]
+    },
     "require": {
-        "php":">=5.2.0"
+        "php": ">=5.2.0"
     },
     "require-dev": {
         "phing/phing": "2.10.1",

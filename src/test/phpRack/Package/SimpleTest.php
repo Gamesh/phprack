@@ -6,7 +6,6 @@
 /**
  * @see AbstractTest
  */
-require_once 'src/test/AbstractTest.php';
 
 class phpRack_Package_SimpleTest extends AbstractTest
 {

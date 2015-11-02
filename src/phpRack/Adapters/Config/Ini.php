@@ -31,12 +31,10 @@
 /**
  * @see phpRack_Adapters_Config
  */
-require_once PHPRACK_PATH . '/Adapters/Config.php';
 
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * Config adapter used for store test configuration loaded from INI file

@@ -32,7 +32,6 @@
 /**
  * @see phpRack_Suite_Test
  */
-require_once PHPRACK_PATH . '/Suite/Test.php';
 
 /**
  * View phpinfo().

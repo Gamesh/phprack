@@ -6,17 +6,14 @@
 /**
  * @see AbstractTest
  */
-require_once 'src/test/AbstractTest.php';
 
 /**
  * @see phpRack_Runner
  */
-require_once PHPRACK_PATH . '/Runner.php';
 
 /**
  * @see phpRack_View
  */
-require_once PHPRACK_PATH . '/View.php';
 
 class ViewTest extends AbstractTest
 {

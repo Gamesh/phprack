@@ -32,12 +32,10 @@
 /**
  * @see phpRack_Runner
  */
-require_once PHPRACK_PATH . '/Runner.php';
 
 /**
  * @see phpRack_Assertion
  */
-require_once PHPRACK_PATH . '/Assertion.php';
 
 /**
  * Parent class of all integration tests

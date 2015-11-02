@@ -32,12 +32,10 @@
 /**
  * @see phpRack_Runner
  */
-require_once PHPRACK_PATH . '/Runner.php';
 
 /**
  * @see phpRack_Exception
  */
-require_once PHPRACK_PATH . '/Exception.php';
 
 /**
  * Runner authentication adapter.
@@ -344,7 +342,6 @@ class phpRack_Runner_Auth
         /**
          * @see phpRack_Runner_Auth_Result
          */
-        require_once PHPRACK_PATH . '/Runner/Auth/Result.php';
         return $this->_authResult = new phpRack_Runner_Auth_Result($result, $message);
     }
 

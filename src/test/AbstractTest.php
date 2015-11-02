@@ -78,14 +78,12 @@ abstract class AbstractTest extends PHPUnit_Framework_TestCase
         /**
          * @see phpRack_Runner
          */
-        require_once PHPRACK_PATH . '/Runner.php';
         $this->_runner = new phpRack_Runner($phpRackConfig);
         /**
          * This test is used as a template for all other packages/assertions
          * testing. No matter what particular test we use here.
          * @see phpRack_Test
          */
-        require_once PHPRACK_PATH . '/Test.php';
         $this->_test = phpRack_Test::factory('CustomTest.php', $this->_runner);
     }
 
