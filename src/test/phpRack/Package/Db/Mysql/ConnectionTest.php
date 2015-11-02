@@ -9,6 +9,7 @@
 
 /**
  * @see phpRack_Package_Db_Mysql_AbstractTest
+ * @requires extension mysql
  */
 
 class phpRack_Package_Db_Mysql_ConnectionTest extends phpRack_Package_Db_Mysql_AbstractTest

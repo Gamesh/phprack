@@ -1,16 +1,13 @@
 <?php
+
 /**
  * @version $Id$
  */
 
 /**
- * @see AbstractTest
+ * @see AbstractTest 
+ * @see phpRack_Package_Shell 
  */
-
-/**
- * @see phpRack_Package_Shell
- */
-
 class phpRack_Package_ShellTest extends AbstractTest
 {
 
@@ -25,10 +22,20 @@ class phpRack_Package_ShellTest extends AbstractTest
         $this->_package = $this->_test->assert->shell;
     }
 
-    public function testBasicRequestWorks()
+    /**
+     * @requires OS Linux
+     */
+    public function testBasicRequestWorksOnLinux()
     {
         $this->_package->exec('who am i');
+    }
 
+    /**
+     * @requires OS WIN32|WINNT
+     */
+    public function testBasicRequestWorksOnWindows()
+    {
+        $this->_package->exec('echo %USERDOMAIN%\%USERNAME%');
     }
 
     /**
@@ -37,7 +44,6 @@ class phpRack_Package_ShellTest extends AbstractTest
     public function testRequestOutput()
     {
         $this->_package->exec('dir', '/test/');
-
     }
 
 }

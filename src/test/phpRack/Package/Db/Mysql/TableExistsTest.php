@@ -1,24 +1,25 @@
 <?php
+
 /**
  * @version $Id$
  */
-
 /**
  * @see AbstractTest
  */
 
 /**
  * @see phpRack_Package_Db_Mysql_AbstractTest
+ * @requires extension mysql
  */
-
 class phpRack_Package_Db_Mysql_TableExistsTest extends phpRack_Package_Db_Mysql_AbstractTest
 {
+
     public function testTableExists()
     {
         try {
             $this->_getPackageWithValidConnect()
-                ->dbExists(self::VALID_DATABASE)
-                ->tableExists(self::INVALID_TABLE);
+                    ->dbExists(self::VALID_DATABASE)
+                    ->tableExists(self::INVALID_TABLE);
             $this->assertFalse($this->_result->wasSuccessful());
         } catch (Exception $e) {
             $this->assertTrue($e instanceof Exception);
@@ -40,6 +41,7 @@ class phpRack_Package_Db_Mysql_TableExistsTest extends phpRack_Package_Db_Mysql_
     public function testTableExistsWithoutDbExists()
     {
         $this->_getPackageWithValidConnect()
-            ->tableExists(self::INVALID_TABLE);
+                ->tableExists(self::INVALID_TABLE);
     }
+
 }

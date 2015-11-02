@@ -1,24 +1,25 @@
 <?php
+
 /**
  * @version $Id$
  */
-
 /**
  * @see AbstractTest
  */
 
 /**
  * @see phpRack_Package_Db_Mysql_AbstractTest
+ * @requires extension mysql
  */
-
 class phpRack_Package_Db_Mysql_QueryTest extends phpRack_Package_Db_Mysql_AbstractTest
 {
+
     public function testQuery()
     {
         try {
             $this->_getPackageWithValidConnect()
-                ->dbExists(self::VALID_DATABASE)
-                ->query('SELECT 1');
+                    ->dbExists(self::VALID_DATABASE)
+                    ->query('SELECT 1');
             $this->assertTrue($this->_result->wasSuccessful());
         } catch (Exception $e) {
             $this->markTestSkipped($e->getMessage());
@@ -29,8 +30,8 @@ class phpRack_Package_Db_Mysql_QueryTest extends phpRack_Package_Db_Mysql_Abstra
     {
         try {
             $this->_getPackageWithValidConnect()
-                ->dbExists(self::VALID_DATABASE)
-                ->query('NOTEXISTEDFUNCTION 1');
+                    ->dbExists(self::VALID_DATABASE)
+                    ->query('NOTEXISTEDFUNCTION 1');
             $this->assertFalse($this->_result->wasSuccessful());
         } catch (Exception $e) {
             $this->markTestSkipped($e->getMessage());
@@ -44,4 +45,5 @@ class phpRack_Package_Db_Mysql_QueryTest extends phpRack_Package_Db_Mysql_Abstra
     {
         $this->_package->query('SELECT 1');
     }
+
 }
